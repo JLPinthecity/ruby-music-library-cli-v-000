@@ -86,6 +86,10 @@ class MusicLibraryController
   end
 
   def play_song
+    "Which song number would you like to play?"
+    input = gets.strip 
+    index = input.to_i
+    
   end
 
 
