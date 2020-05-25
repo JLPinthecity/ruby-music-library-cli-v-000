@@ -73,6 +73,18 @@ class MusicLibraryController
     end
   end
 
+  def list_songs_by_genre
+    puts "Please enter the name of a genre:"
+    input = gets.strip 
+    if genre = Genre.find_by_name(input)
+      genre.songs.sort do |a, b|
+        a.name <=> b.name
+      end.each.with_index(1) do |song, index|
+        puts "#{index}. #{song.artist.name} - #{song.name}"
+      end
+    end
+  end
+
 
 
 
