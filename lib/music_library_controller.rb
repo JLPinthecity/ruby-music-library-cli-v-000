@@ -38,14 +38,12 @@ class MusicLibraryController
   end
 
   def list_songs
-    files = MusicImporter.files
-    files.each.with_index(1) do |file|
-      binding.pry
+    Song.all.sort do |a, b|
+      a.name <=> b.name
+    end.each_with_index(1) do |song, index|
+      puts "#{index}. #{song.artist} - #{song.name} - #{song.genre}"
     end
-
   end
-
-
 
 
 end
