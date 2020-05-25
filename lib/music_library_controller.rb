@@ -89,6 +89,8 @@ class MusicLibraryController
     "Which song number would you like to play?"
     input = gets.strip
     index = input.to_i
+    songs = list_songs
+    binding.pry
 
   end
 
