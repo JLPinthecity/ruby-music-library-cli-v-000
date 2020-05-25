@@ -91,7 +91,7 @@ class MusicLibraryController
     index = input.to_i
     songs = list_songs
     song = songs[index - 1]
-    puts "Playing #{song.name} by #{song.artist}"
+    puts "Playing #{song.name} by #{song.artist.name}"
   end
 
 
