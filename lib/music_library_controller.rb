@@ -38,11 +38,11 @@ class MusicLibraryController
   end
 
   def list_songs
-    files = MusicImporter.files 
+    files = MusicImporter.files
     files.each.with_index(1) do |file|
       binding.pry
     end
-    
+
   end
 
 
