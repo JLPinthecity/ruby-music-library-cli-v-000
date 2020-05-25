@@ -90,9 +90,8 @@ class MusicLibraryController
     input = gets.strip
     index = input.to_i
     songs = list_songs
-    songs[index]
-    binding.pry
-
+    song = songs[index]
+    puts "Playing #{song.name} by #{song.artist}"
   end
 
 
