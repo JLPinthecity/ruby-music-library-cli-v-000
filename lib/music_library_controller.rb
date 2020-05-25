@@ -61,7 +61,7 @@ class MusicLibraryController
     end
   end
 
-  end
+  
 
 
 end
