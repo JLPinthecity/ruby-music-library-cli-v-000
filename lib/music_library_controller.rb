@@ -66,9 +66,9 @@ class MusicLibraryController
     input = gets.strip
     Artist.find_by_name(input)
     binding.pry
-      
-    
-    
+
+
+
   end
 
 
